@@ -1,0 +1,13 @@
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: event-display-trigger
+  namespace: ping-test
+spec:
+  broker: kafka-broker
+  subscriber:
+    ref:
+      apiVersion: v1
+      kind: Service
+      name: event-display
+      namespace: ping-test
