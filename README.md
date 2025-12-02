@@ -59,11 +59,11 @@ just knative-eventing
 ```
 
 ```shell
-just broker
+just kafka-broker-controller
 ```
 
 ```shell
-just kafka-broker-controller
+just broker
 ```
 
 ```shell

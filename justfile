@@ -4,6 +4,9 @@ colima-start:
 colima-stop:
     colima stop
 
+colima-delete:
+    colima delete --data --force
+
 minio:
     helm repo add minio https://charts.min.io
     helm repo update
